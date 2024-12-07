@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!--& start nav  -->
+  <nav class="navbar navbar-expand-lg navbar-light my-nav py-5" id="nav">
+    <div class="container-fluid w-75">
+      <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+        <div class="nav-icon ">
+          <img src="./img/logo@2x.png" alt="weather logo" class="w-100 ">
+        </div>
+        <div class="left-nav-text d-flex flex-column justify-content-around ms-3">
+          <h1>Weather </h1>
+          <span>tag line goeas here</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active home" aria-current="page" href="#nav">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link not-home active" aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link not-home active" aria-current="page" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link not-home active" aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link not-home active" aria-current="page" href="#">Contact</a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+  <!--& end nav  -->
+
+  <!-- & start main section -->
+  <section class=" overflow-auto">
+    <div class="inner lage-inner m-auto mt-4">
+      <form class="position-relative ">
+        <input type="text" class="form-control input-search" onkeyup="searcValue(this.value)"
+          placeholder="find your location ">
+        <input type="button" value="Find" class="px-5 text-center py-2 botn-input ">
+      </form>
+      <div class="weather-stat">
+        <div class="container-fluid mt-5 ">
+          <div class="row ">
+            <div class="col-lg-4 col-md-12 c-h card-header1">
+              <div class="inner first-day d-flex justify-content-between w-100 align-items-center h-100">
+                <h3>Friday</h3>
+                <h3>6 December</h3>
+              </div>
+              <div class=" w-card card1">
+
+                <div class="inner ">
+                  <div class="location">
+                    <h3>cairo</h3>
+                  </div>
+
+                  <div class="deg">
+                    20.3<span>°C</span>
+                  </div>
+
+                  <div class="forcast-icon">
+                    <img src="	https://cdn.weatherapi.com/weather/64x64/night/113.png" class="">
+                  </div>
+
+                  <div class="staus">
+                    clear
+                  </div>
+                  <div class="wind-box d-flex justify-content-start gap-4 align-items-center mt-5">
+                    <div class="cont d-flex justify-content-center align-items-center">
+                      <img src="./img/icon-umberella.png" alt="">
+                      <p class="rain ms-1">20%</p>
+                    </div>
+                    <div class="cont d-flex justify-content-center align-items-center">
+                      <img src="./img/icon-wind.png" alt="">
+                      <p class="wind  ms-1">18km</p>
+                    </div>
+                    <div class="cont d-flex justify-content-center align-items-center">
+                      <img src="./img//icon-compass.png" alt="">
+                      <p class="compas  ms-1">east</p>
+                    </div>
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 c-h card-header2">
+              <div class="inner sec-day w-100 h-100 d-flex justify-content-center align-items-center">
+                <h3>Saturday</h3>
+              </div>
+              <div class=" w-card card2">
+
+                <div class="inner d-flex flex-column justify-content-center align-items-center w-100 ">
+                  <div class="img-cont">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                  </div>
+
+                  <p class="big-degree">
+                    25.3<span>°C</span>
+                  </p>
+
+                  <p class="small-degree">
+                    15.3<span>°C</span>
+                  </p>
+
+                  <p class="status">
+                    sunny
+                  </p>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-4  col-md-12 c-h card-header3">
+              <div class="inner w-100 third-day h-100 d-flex justify-content-center align-items-center">
+                <h3>Sunday</h3>
+              </div>
+
+              <div class="w-card card3">
+
+                <div class="inner d-flex flex-column justify-content-center align-items-center w-100 ">
+                  <div class="img-cont">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                  </div>
+
+                  <p class="big-degree">
+                    25.3<span>°C</span>
+                  </p>
+
+                  <p class="small-degree">
+                    15.3<span>°C</span>
+                  </p>
+
+                  <p class="status">
+                    sunny
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- & end main section -->
+
+  <!-- &start fotter -->
+  <footer>
+    <div class="inner d-flex">
+      <div class="left">
+        <form class="position-relative ">
+          <input type="text" class="form-control input-search" placeholder="Enter your email to subscribe ">
+          <input type="button" value="subscribe" class="px-5 text-center py-2 botn-input ">
+        </form>
+        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+      <div class="right ">
+        <div class="cont d-flex justify-content-center align-content-center mt-5 gap-1">
+          <div class="logo-div d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="logo-div d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="logo-div d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-goodreads"></i>
+          </div>
+          <div class="logo-div d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- &end fotter -->
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
