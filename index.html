@@ -57,12 +57,11 @@
   <section class=" overflow-auto">
     <div class="inner lage-inner m-auto mt-4">
       <form class="position-relative ">
-        <input type="text" class="form-control input-search" onkeyup="searcValue(this.value)"
-          placeholder="find your location ">
+        <input type="text" class="form-control input-search" placeholder="find your location ">
         <input type="button" value="Find" class="px-5 text-center py-2 botn-input ">
       </form>
       <div class="weather-stat">
-        <div class="container-fluid mt-5 ">
+        <!-- <div class="container-fluid mt-5 ">
           <div class="row ">
             <div class="col-lg-4 col-md-12 c-h card-header1">
               <div class="inner first-day d-flex justify-content-between w-100 align-items-center h-100">
@@ -165,7 +164,108 @@
 
 
           </div>
+        </div> -->
 
+        <div class="container-cards d-flex mt-5">
+          <div class="col">
+            <div class="header-1">
+              <div class="inner first-day d-flex justify-content-between w-100 align-items-center h-100">
+                <h3>Friday</h3>
+                <h3>6 December</h3>
+              </div>
+            </div>
+            <div class="body-1">
+
+              <div class="inner">
+                <div class="location">
+                  <h5>
+                    cairo
+                  </h5>
+                </div>
+                <div class="deg">
+                  20.1<span>°C</span>
+                </div>
+
+                <div class="forcast-icon">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class="">
+                </div>
+
+                <div class="staus">
+                  clear
+                </div>
+
+                <div class="wind-box d-flex justify-content-start gap-4 align-items-center mt-5">
+                  <div class="cont d-flex justify-content-center align-items-center">
+                    <img src="./img/icon-umberella.png" alt="">
+                    <p class="rain ms-1">20%</p>
+                  </div>
+                  <div class="cont d-flex justify-content-center align-items-center">
+                    <img src="./img/icon-wind.png" alt="">
+                    <p class="wind  ms-1">20km</p>
+                  </div>
+                  <div class="cont d-flex justify-content-center align-items-center">
+                    <img src="./img//icon-compass.png" alt="">
+                    <p class="compas  ms-1">east</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="header-2">
+              <div class="inner sec-day w-100 h-100 d-flex justify-content-center align-items-center">
+                <h3>Saturday</h3>
+              </div>
+            </div>
+            <div class="body-2">
+              <div class="inner d-flex flex-column justify-content-center align-items-center w-100 ">
+                <div class="img-cont">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                </div>
+
+                <p class="big-degree">
+                  25.3<span>°C</span>
+                </p>
+
+                <p class="small-degree">
+                  15.3<span>°C</span>
+                </p>
+
+                <p class="status">
+                  sunny
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="header-3">
+              <div class="inner third-day w-100 h-100 d-flex justify-content-center align-items-center">
+                <h3>sunday</h3>
+              </div>
+            </div>
+            <div class="body-3">
+              <div class="inner d-flex flex-column justify-content-center align-items-center w-100 ">
+                <div class="img-cont">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                </div>
+
+                <p class="big-degree">
+                  25.3<span>°C</span>
+                </p>
+
+                <p class="small-degree">
+                  15.3<span>°C</span>
+                </p>
+
+                <p class="status">
+                  sunny
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   </section>
@@ -173,11 +273,11 @@
 
   <!-- &start fotter -->
   <footer>
-    <div class="inner d-flex">
-      <div class="left">
-        <form class="position-relative ">
+    <div class="inner fotter-inner d-flex">
+      <div class="left ">
+        <form class=" d-flex">
           <input type="text" class="form-control input-search" placeholder="Enter your email to subscribe ">
-          <input type="button" value="subscribe" class="px-5 text-center py-2 botn-input ">
+          <button type="button" value="subscribe" class="px-5 text-center py-2 botn-input ">Subscribe</button>
         </form>
         <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
       </div>

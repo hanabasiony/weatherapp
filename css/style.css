@@ -65,7 +65,6 @@ section {
 section .lage-inner {
     width: 75%;
     overflow: auto;
-    height: 500px;
 }
 
 section .inner input {
@@ -98,7 +97,7 @@ section .inner input {
     color: white;
 }
 /* !end form */
-.w-card {
+/* .w-card {
     height: 400px;
 
 }
@@ -132,6 +131,7 @@ section .inner input {
 .c-h h3{
     color: rgb(214, 212, 212);
     font-size: 14px;
+    margin: 0px;
    
 }
 .card1  .location h3{
@@ -141,6 +141,8 @@ section .inner input {
     color: rgb(214, 212, 212);
     font-weight: 400;
     margin-left: 0px;
+    margin: 0px;
+
 }
 .card1  .deg{
     font-size: 80px;
@@ -176,33 +178,19 @@ section .inner input {
     color: #009AD8;
     font-size: 16px;
 }
-/* !card 3 */
+
 .card3 img{
     width: 100%;
 }
 .card3 .img-cont{
     width: 20%;
 }
-.card3 .big-degree{
-    font-size: 24px;
-    font-size: 1.7142857143em;
-    color: white;
-    font-weight: 700;
-}
-.card3 .small-degree{
-    font-size:18px;
-    font-weight: 500;
-    color: #dcdcdc;
-}
-.card3 .status{
-    color: #009AD8;
-    font-size: 16px;
-}
+
 
 /* !fotter */
 footer{
-    background-color: #262936;
-    height: 200px;
+    background-color: #262936 !important;
+    /* height: 200px; */
     overflow: auto;
 }
 footer input{
@@ -223,12 +211,10 @@ footer .inner{
     margin: auto;
     width: 75%;
 }
-footer .botn-input {
-    position: absolute;
-    top: -40px;
-    right: 5px;
-    background-color: #009AD8 !important;
-    color: white;
+form button{
+    background-color: #009AD8;
+    border-radius: 30%;
+    padding: 20px 10px;
 }
 footer .left{
     width: 65%;
@@ -260,3 +246,185 @@ footer .right{
     font-size: 13px;
     margin-top: 40px;
 }
+
+/* !new */
+.container-cards{
+    width: 100%;
+    margin: auto;
+}
+
+.col{
+    border-radius: 20px;
+   
+}
+
+
+.header-1{
+    background-color: #2D303D;
+    height: 40px;
+    border-top-left-radius: 15px;
+}
+.header-1 h3{
+    padding: 0px 10px;
+    color: rgb(186, 185, 185);
+    font-size: 15px;
+    margin: 0px;
+}
+.body-1{
+    background-color: #323544;
+    height: 400px;
+    border-bottom-left-radius: 15px;
+}
+.body-1 .inner{
+    padding:20px;
+}
+.body-1 .location h5{
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: rgb(214, 212, 212);
+    font-weight: 400;
+    margin-left: 0px;
+    margin: 0px;
+}
+.body-1 .deg{
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+}
+.body-1 .forcast-icon {
+    margin: 15px;
+    width: 100%;
+}
+.body-1 .staus{
+    color: #009AD8;
+    font-size: 18px;
+
+}
+.body-1 .wind-box p{
+    color: #cdcdcd;
+    margin-bottom: 0px;
+}
+.header-2{
+    background-color: #222530;
+    height: 40px;
+}
+.header-2 h3{
+    padding: 0px 10px;
+    color: rgb(186, 185, 185);
+    font-size: 15px;
+    margin: 0px;
+}
+.body-2{
+    background-color: #262936;
+    height: 400px;
+}
+.body-2 .inner{
+    padding-top: 50px;
+}
+.body-2 .big-degree{
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.body-2 .small-degree{
+    font-size:18px;
+    font-weight: 500;
+    color: #dcdcdc;
+}
+.body-2 .status{
+    color: #009AD8;
+    font-size: 16px;
+}
+.header-3{
+    background-color: #2D303D;
+    height: 40px;
+    border-top-right-radius: 15px;
+}
+.header-3 h3{
+    padding: 0px 10px;
+    color: rgb(186, 185, 185);
+    font-size: 15px;
+    margin: 0px;
+}
+
+.body-3{
+    background-color: #323544;
+    height: 400px;
+    border-bottom-right-radius: 15px;
+}
+.body-3 .inner{
+    padding-top: 50px;
+}
+.body-3 .big-degree{
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.body-3 .small-degree{
+    font-size:18px;
+    font-weight: 500;
+    color: #dcdcdc;
+}
+.body-3 .status{
+    color: #009AD8;
+    font-size: 16px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .container-cards{
+        flex-direction: column;
+    }
+    .header-1{
+        border-top-right-radius: 15px;
+    }
+    .header-3{
+        border-top-right-radius:0px;
+    }
+    .body-3{
+        border-bottom-left-radius: 15px;
+    }
+    .body-1{
+        border-bottom-left-radius: 0px;
+        text-align: center;
+    }
+    .fotter-inner{
+        flex-direction: column;
+        width: 95% !important;
+        margin: auto;
+
+    }
+    .left{
+        width: 90%;
+        margin: auto;
+    }
+    .right{
+        margin: auto;
+        width: 90%;
+    }
+    .right .cont{
+        margin-top: 20px !important;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
