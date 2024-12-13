@@ -51,7 +51,7 @@ var inputSearch = document.querySelector('.input-search')
 var inputSearchValue = ''
 
 
-inputSearch.addEventListener('change', function (){
+inputSearch.addEventListener('keyup', function (){
     var req = new XMLHttpRequest();
     inputSearchValue = inputSearch.value
     console.log(inputSearchValue);
