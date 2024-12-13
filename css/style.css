@@ -415,15 +415,14 @@ footer .right{
         margin-bottom: 25px;
     }
     .navbar-nav{
-        padding-top: 20px;
+        padding-top: 21px;
     }
     .nav-item{
-        padding: 4px;
+        padding: 5px;
     }
-    
 
 }
-.navbar-nav{
+nav .navbar-nav{
     align-items: center !important;
 }
 
