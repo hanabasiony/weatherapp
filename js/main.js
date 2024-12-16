@@ -5,10 +5,9 @@ var locArr = []
 fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
-        console.log("Your IP Address is: ", data.ip);
         locApi(data.ip)
     })
-    .catch(error => console.error("Error fetching IP: ", error));
+    
 
 
 
@@ -20,7 +19,7 @@ function locApi(locationIP) {
     loc.addEventListener('readystatechange', function () {
         if (loc.readyState === 4 && loc.status >= 200 && loc.status < 300) {
             locArr = JSON.parse(loc.response)
-            console.log(locArr.countryName);
+
             reqFirstOpenWeather()
         }
     })
@@ -54,7 +53,6 @@ var inputSearchValue = ''
 inputSearch.addEventListener('keyup', function (){
     var req = new XMLHttpRequest();
     inputSearchValue = inputSearch.value
-    console.log(inputSearchValue);
     req.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=5fc99c2a45c347e89a5213819240712&q=${inputSearchValue}&days=3`)
     req.send()
     req.addEventListener('readystatechange', function () {
@@ -74,7 +72,6 @@ inputSearch.addEventListener('keyup', function (){
 
 
 function displayCard1() {
-    console.log(arr)
     var cartona1 = ''
 
     cartona1 = `
@@ -116,7 +113,6 @@ function displayCard1() {
     document.querySelector('.body-1 .inner').innerHTML = cartona1
 }
 function displayCard2() {
-    console.log(arr)
     var cartona2 = ''
     // cartona2 = `
     //     <div class="inner d-flex flex-column justify-content-center align-items-center w-100 mt-5">
@@ -160,7 +156,6 @@ function displayCard2() {
     document.querySelector('.body-2').innerHTML = cartona2
 }
 function displayCard3() {
-    console.log(arr)
     var cartona3 = ''
     // cartona3 = `
     //     <div class="inner d-flex flex-column justify-content-center align-items-center w-100 mt-5">
@@ -209,7 +204,6 @@ function diplayHeader1() {
     const dayOfWeekNumber = date.getDay();
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const dayOfWeekName = daysOfWeek[dayOfWeekNumber];
-    console.log(dayOfWeekName);
 
     document.querySelector('.first-day').innerHTML = `
      <h3>${dayOfWeekName}</h3>
@@ -223,7 +217,6 @@ function displayHeader2() {
     const dayOfWeekNumber = date.getDay();
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const dayOfWeekName = daysOfWeek[dayOfWeekNumber];
-    console.log(dayOfWeekName);
 
     document.querySelector('.sec-day').innerHTML = `
      <h3>${dayOfWeekName}</h3>
@@ -237,10 +230,10 @@ function displayHeader3() {
     const dayOfWeekNumber = date.getDay();
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const dayOfWeekName = daysOfWeek[dayOfWeekNumber];
-    console.log(dayOfWeekName);
 
     document.querySelector('.third-day').innerHTML = `
      <h3>${dayOfWeekName}</h3>
     
     `
 }
+
